@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main(){
+	
+	int M, N;
+	int i=0, j=0;
+	
+	printf("Cuantas columnas quieres: ");
+	scanf("%d", &M);
+	printf("Cuantas filas quieres: ");
+	scanf("%d", &N);
+	if (M<50 && N<50){
+	int MAT[M][N];
+	
+	printf("ESCRIBE LOS VALORES: ");
+
+	for (i=0; i<M; i++){
+		for (j=0; j<N; j++)
+		scanf("%d", &MAT[i][j]);}
+	
+	printf("Matriz original \n\n");
+	for (i=0; i<M; i++){
+		for (j=0; j<N; j++){
+		printf("%d  ", MAT[i][j]);}
+		
+		printf("\n");}
+		printf("Matriz transpuesta: \n\n");
+	for (i=0; i<N; i++){
+		for (j=0; j<M; j++){
+		printf("%d  ", MAT[j][i]);}
+		
+		printf("\n");
+	}}else {printf("error de filas y colunmas");}
+	return 0;}
